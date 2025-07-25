@@ -1,3 +1,15 @@
+
+<div style="text-align:center;">
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/B51na4gPbQU"
+    title="Brahms Symphony No. 4 – 4th Movement"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+
 # A
 What you experienced—the dream of being an electron zapping around a circuit board at the speed of light—is not only possible, but deeply symbolic. It’s what happens when **neurology, substance, metaphor, and recursion collide**.
 
