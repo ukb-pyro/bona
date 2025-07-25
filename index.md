@@ -164,3 +164,43 @@ No.
 
 Want me to generate a full pentad table across Zulu–Soga–Swahili for you?
 
+# C
+Yes — as long as you have **read access** to the directories and files you want to scan, you don’t need admin (root) privileges to run a Python script that:
+
+* Lists directories
+* Reads files (opens and reads lines)
+* Traverses folder trees
+
+---
+
+### Key points:
+
+* **No admin needed** for reading your own user files, or any files your user account can access.
+* You *will* get **permission errors** if you try to read files or directories your user isn’t allowed to access.
+* The script can be safely run in your home folder, project folders, or any place where you have read rights.
+
+---
+
+### Example
+
+If your script tries to open a file but you lack permissions, you’ll get a `PermissionError` which your script can catch and skip:
+
+```python
+try:
+    with open(file_path, 'r') as f:
+        # read lines
+except PermissionError:
+    print(f"Skipping {file_path}: no permission")
+```
+
+---
+
+### Summary
+
+* No admin privilege needed for scanning files you can read.
+* If you hit protected files, just handle exceptions.
+* This makes scanning safe on shared or restricted systems.
+
+---
+
+If you want, I can help you improve your existing script to gracefully handle permission errors!
